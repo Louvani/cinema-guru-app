@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 import Authentication from './routes/auth/Authentication';
+import Dashboard from './routes/dashboard/Dashboard';
 import './App.css';
 
 export const URL_API = 'http://localhost:8000'
@@ -34,7 +35,7 @@ function App() {
       {!isLoggedIn ? (
         <Authentication setIsLoggedIn={setIsLoggedIn} setUserUsername={setUserUsername} />
       ) : (
-        <h1>Dashboard</h1>
+        <Dashboard userUsername={userUsername} setIsLoggedIn={setIsLoggedIn} />
       )}
     </div>
   );

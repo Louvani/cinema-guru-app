@@ -10,7 +10,7 @@
   --color-dark-grey: #222222;
   --color-green: #08805b;
 
-  --text-color: var(--color-black);
+  --text-color: var(--color-white);
   --valid-color: var(--color-green);
   --error-color: var(--color-red);
 
@@ -48,7 +48,7 @@
   --section-footer-align: center;
 
   /** HEADER **/
-  --header-padding: 4rem 0 0;
+  --header-padding: 1rem 2rem;
 
   /** FOOTER **/
   --footer-padding: 5rem 0 1rem;
@@ -85,7 +85,6 @@ html {
 }
 
 body {
-  color: var(--text-color);
   font-family: var(--font-family-base);
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
