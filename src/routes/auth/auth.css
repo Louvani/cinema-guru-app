@@ -1,0 +1,44 @@
+.form {
+    width: 450px;
+    height: 361px;
+    background-color: var(--color-white);
+    margin: 0 auto;
+}
+
+.header-auth {
+    width: 100%;
+    display: flex;
+}
+
+
+/* Login Component
+===========================================*/
+
+.login-container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 354px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h2 {
+    margin-bottom: 42px;
+    font-size: var(--font-size-x-large);
+    font-weight: 400;
+}
+
+.login-container .input-light:nth-of-type(1) {
+    margin-bottom: 40px;
+}
+
+.login-container .input-light:last-of-type {
+    margin-bottom: 45px;
+}
+
+.login-container .btn-log {
+    width: 104px;
+    margin-right: -4px;
+    align-self: flex-end;
+}

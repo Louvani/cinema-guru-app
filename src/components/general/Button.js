@@ -2,17 +2,20 @@ import './general.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-function Button({label, className, onClick, icon}) {
+function Button({label, className, onClick, icon, text, id}) {
     return(
-        <button className={`btn ${className}`} onClick={onClick} type={label}>
+        <button
+            type={label}
+            className={`btn ${className}`}
+            onClick={onClick}
+            id={id}>
             {icon && (
                 <span className="icons-span">
                     <FontAwesomeIcon icon={icon} size={'sm'} className='icon' />
-                    </span>
+                </span>
             )}
-            {label}
+            {text}
         </button>
-        
     )
 }
 

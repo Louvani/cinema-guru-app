@@ -1,7 +1,8 @@
-import './App.css';
-
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+
+import Authentication from './routes/auth/Authentication';
+import './App.css';
 
 export const URL_API = 'http://localhost:8000'
 
@@ -31,7 +32,7 @@ function App() {
   return (
     <div className="App light-section">
       {!isLoggedIn ? (
-        <h1>Authentication</h1>
+        <Authentication setIsLoggedIn={setIsLoggedIn} setUserUsername={setUserUsername} />
       ) : (
         <h1>Dashboard</h1>
       )}
