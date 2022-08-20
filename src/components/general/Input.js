@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 function Input({label, type, className, value, setValue, icon, inputAttributes}) {
-    const hendleInpt = (onChange) => {
+    const hendleInput = (onChange) => {
         setValue(onChange.target.value);
     }
 
@@ -15,7 +15,7 @@ function Input({label, type, className, value, setValue, icon, inputAttributes})
                 )}
                 {label}
             </label>
-            <input type={type} onChange={hendleInpt} id={inputAttributes.for} value={value} />
+            <input type={type} onChange={hendleInput} id={inputAttributes.for} value={value} />
         </div>
     )
 }
