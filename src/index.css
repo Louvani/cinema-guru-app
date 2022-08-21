@@ -60,6 +60,7 @@
   --nav-item-letter-spacing: .04rem;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 0 2rem;
+  --nav-item-padding: 1rem 1.1rem;
   --nav-item-link-hover: var(--color-white);
 
   /** BUTTON **/
