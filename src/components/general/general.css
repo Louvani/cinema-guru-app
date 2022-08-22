@@ -15,8 +15,7 @@
 
 .Input-container.input-light input {
     border: 0;
-    border-bottom: 1px solid#bb000e;
-    color: var(--section-text-color)!;
+    border-bottom: 1px solid var(--color-secondary);
 }
 .Input-container.input-dark input {
     min-height: 21px;
@@ -27,7 +26,7 @@
     color: var(--text-color);
 }
 .Input-container.input-dark label {
-    color: var(--text-color)!;
+    color: var(--text-color);
 }
 
 .Input-container.input-light label {
@@ -72,7 +71,7 @@
     outline: none;
     border: none;
     border-bottom: 1px solid var(--color-secondary);
-    background-color: #2c2c2c;
+    background-color: var(--color-light-grey);
     color: var(--text-color);
 }
 

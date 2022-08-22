@@ -31,6 +31,15 @@ function SideBar() {
         navigate(pages[pageName]["path"]);
     }
 
+    const handleMouseOver = () => {
+        setSmall(false);
+    };
+
+      const handleMouseOut = () => {
+        setSmall(true);
+    };
+
+
     // UseEfect
 
     useEffect(() => {
@@ -50,7 +59,7 @@ function SideBar() {
 
 
     return(
-        <nav className={`sideBar ${small ? 'small' : ''}`}>
+        <nav className={`sideBar ${small ? 'small' : ''}`} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <ul className="navigation-sideBar">
                 {Object.keys(pages).map((key, index) => {
                     return(
@@ -59,7 +68,7 @@ function SideBar() {
                             key={index}>
                             <FontAwesomeIcon icon={pages[key]["icon"]} />
                             <span className="text-sideBar">{pages[key]["name"]}</span>
-                            {selected === pages[key]["name"] && <FontAwesomeIcon icon={faArrowRight} className="arrow-icon" />}
+                            {selected === pages[key]["name"] && !small && <FontAwesomeIcon icon={faArrowRight} className="arrow-icon" />}
                         </li>
                     )
                 })}

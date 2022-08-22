@@ -2,14 +2,14 @@ import './general.css';
 
 
 function SelectInput({label, options, className, value, setValue}) {
-    const hendleInput = (onChange) => {
+    const handleInput = (onChange) => {
         setValue(onChange.target.value);
     }
 
     return(
-        <div className={`Select-container ${className}`}>
+        <div className={`select-container ${className}`}>
             <label>{label}</label>
-            <select onChange={hendleInput} value={value} >
+            <select onChange={handleInput} value={value} >
                 {options.map((option) => (
                     <option key={option}>{option}</option>
                 ))}

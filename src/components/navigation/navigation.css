@@ -93,36 +93,36 @@
     right: 30px;
 }
 
-  .SideBar .sideBar-activities {
+.SideBar .sideBar-activities {
     width: 208px;
     min-height: 50px;
     margin: 0 auto;
     padding: 10px;
     background-color: #2c2c2c;
-  }
-  
-  .sideBar-activities .title-activities {
+}
+
+.sideBar-activities .title-activities {
     font-size: 24px;
     padding: 5px;
     border-bottom: 3px solid #ffffff;
     margin-bottom: 10px;
-  }
-  
-  /* small sidebar
-  -------------------------------------*/
-  
-  .SideBar.small {
-    width: 50px;
-  }
-  
-  .SideBar.small .text-sideBar {
+}
+
+/* small sidebar
+-------------------------------------*/
+
+.sideBar.small {
+    width: 5rem;
+}
+
+.sideBar.small .text-sideBar {
     display: none;
-  }
-  
-  .SideBar.small .sideBar-activities {
+}
+
+.sideBar.small .sideBar-activities {
     display: none;
-  }
-  
-  .SideBar.small .select-icon {
+}
+
+.sideBar.small .select-icon {
     display: none;
-  }
+}

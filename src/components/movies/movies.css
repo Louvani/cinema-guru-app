@@ -1,0 +1,52 @@
+/* Filter Component
+===========================================*/
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.section-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imput-filter {
+    display: flex;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.imput-filter > div {
+    margin: 0 1rem;
+}
+
+.tags-filter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+/* TAG component
+===========================================*/
+
+.tag {
+    margin: 0 10px 11px 0;
+    padding: 5px 12px;
+    border: 1px solid var(--color-primary);
+    border-radius: 15px;
+    color: var(--text-color);
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.tag.selected {
+    background-color: var(--color-primary);
+}
+.tag.selected.card {
+    cursor: auto;
+}
