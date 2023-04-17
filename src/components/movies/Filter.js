@@ -23,7 +23,7 @@ function Filter({minYear, setMinYear, maxYear, setMaxYear, sort, setSort, genres
                         value={minYear} setValue={setMinYear} inputAttributes={{ for: 'min-date' }} />
                     <Input  label={'Max Date'} type={'date'} className={'input-dark second-input'}
                         value={maxYear} setValue={setMaxYear} inputAttributes={{ for: 'max-date' }} />
-                    <SelectInput label={'Sort'} options={options} className={'select-input'} setValue={setSort} />
+                    <SelectInput label={'Sort:'} options={options} className={'select-input'} setValue={setSort} />
                 </div>
             </div>
             <div className="tags-filter">

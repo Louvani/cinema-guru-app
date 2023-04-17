@@ -5,7 +5,7 @@ import { Fragment } from 'react';
 
 
 function Input({label, type, className, value, setValue, icon, inputAttributes}) {
-    const hendleInput = (onChange) => {
+    const handleInput = (onChange) => {
         setValue(onChange.target.value);
     }
 
@@ -32,11 +32,11 @@ function Input({label, type, className, value, setValue, icon, inputAttributes})
             {type === 'password' ? (
                 // implement show password
                 <Fragment>
-                    <input type={type} onChange={hendleInput} id={inputAttributes.for} value={value} />
+                    <input type={type} onChange={handleInput} id={inputAttributes.for} value={value} />
                     <FontAwesomeIcon id={'icon-pwd'} icon={faEye} size={'sm'} className={`icon-password`} onClick={showPassword}/>
                 </Fragment>
             ) : (
-                <input type={type} onChange={hendleInput} id={inputAttributes.for} value={value} />
+                <input type={type} onChange={handleInput} id={inputAttributes.for} value={value} />
             ) }
         </div>
     )
